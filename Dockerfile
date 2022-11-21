@@ -9,7 +9,7 @@ FROM debian:latest
 
 MAINTAINER hihouhou < hihouhou@hihouhou.com >
 
-ENV FROZEN_FLAME_VERSION 0.0.0
+ENV FROZEN_FLAME_VERSION 0.65.0.5
 
 # Update & install packages
 RUN apt-get update && \
