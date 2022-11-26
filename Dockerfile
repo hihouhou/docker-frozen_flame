@@ -9,7 +9,7 @@ FROM debian:latest
 
 MAINTAINER hihouhou < hihouhou@hihouhou.com >
 
-ENV FROZEN_FLAME_VERSION 0.65.0.5
+ENV FROZEN_FLAME_VERSION 0.65.0.6
 
 # Update & install packages
 RUN apt-get update && \
@@ -34,4 +34,5 @@ COPY Game.ini /home/ff/steam/ff/FrozenFlame/Saved/Config/LinuxServer/Game.ini
 
 WORKDIR /home/ff/steam/ff
 
+#CMD /bin/bash FrozenFlameServer.sh -LOCALLOGTIMES -MetaGameServerName=$SERVER_NAME -port=$SERVER_PORT -queryPort=$QUERY_PORT
 CMD /bin/bash FrozenFlameServer.sh -LOCALLOGTIMES -MetaGameServerName=$SERVER_NAME
